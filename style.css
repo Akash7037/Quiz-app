@@ -1,116 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto+Mono&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(circle at top, #1c1b2b, #0f0f1a);
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
-
-.container {
-  background: #1f1f2f;
-  border-radius: 15px;
-  padding: 30px;
-  box-shadow: 0 0 20px #00f2ff66;
-  max-width: 600px;
-  width: 100%;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2rem;
-  color: #00fff7;
-  margin-bottom: 20px;
-  text-shadow: 0 0 8px #00fff7aa;
-}
-
-#room-section {
-  margin-bottom: 30px;
-}
-
-#roomCodeInput {
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 8px;
-  border: none;
-  margin: 10px;
-  width: 180px;
-  text-align: center;
-}
-
-button {
-  background: linear-gradient(135deg, #00f0ff, #6f00ff);
-  color: white;
-  padding: 10px 20px;
-  margin: 8px;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-family: 'Roboto Mono', monospace;
-  cursor: pointer;
-  box-shadow: 0 0 10px #00ffff88;
-  transition: 0.2s ease;
-}
-
-button:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #6f00ff, #ff0099);
-  box-shadow: 0 0 15px #ff00ff88;
-}
-
-#question {
-  font-size: 1.2rem;
-  margin: 20px 0;
-}
-
-#answers button {
-  display: block;
-  margin: 10px auto;
-  width: 80%;
-  font-weight: bold;
-}
-
-.hp-bars {
-  margin-top: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-label {
-  font-size: 0.9rem;
-  margin-bottom: 5px;
-  display: block;
-}
-
-progress {
-  width: 130px;
-  height: 18px;
-  border-radius: 8px;
-  appearance: none;
-}
-
-progress::-webkit-progress-bar {
-  background-color: #333;
-  border-radius: 8px;
-}
-
-progress::-webkit-progress-value {
-  background: linear-gradient(90deg, #00ff88, #00ccff);
-  border-radius: 8px;
-}
-
-#msg {
-  margin-top: 20px;
-  font-size: 1rem;
-  color: #00ffcc;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Orbitron',sans-serif;background:radial-gradient(circle at top,#1c1b2b,#0f0f1a);color:#fff;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px;}
+.container{background:#1f1f2f;border-radius:15px;padding:30px;box-shadow:0 0 20px #00f2ff66;max-width:600px;width:100%;text-align:center;}
+h1{font-size:2rem;color:#00fff7;margin-bottom:20px;text-shadow:0 0 8px #00fff7aa;}
+#room-section{margin-bottom:30px;}
+#roomCodeInput,select{padding:10px;font-size:1rem;border-radius:8px;border:none;margin:10px;width:180px;text-align:center;}
+button{background:linear-gradient(135deg,#00f0ff,#6f00ff);color:#fff;padding:10px 20px;margin:8px;border:none;border-radius:10px;font-size:1rem;font-family:'Roboto Mono',monospace;cursor:pointer;box-shadow:0 0 10px #00ffff88;transition:0.2s;}
+button:hover{transform:scale(1.05);background:linear-gradient(135deg,#6f00ff,#ff0099);box-shadow:0 0 15px #ff00ff88;}
+#question{font-size:1.2rem;margin:20px 0;}
+#answers button{display:block;margin:10px auto;width:80%;font-weight:bold;}
+.hp-bars{margin-top:20px;display:flex;justify-content:space-between;}
+label{font-size:0.9rem;margin-bottom:5px;display:block;}
+progress{width:130px;height:18px;border-radius:8px;appearance:none;}
+progress::-webkit-progress-bar{background-color:#333;border-radius:8px;}
+progress::-webkit-progress-value{background:linear-gradient(90deg,#00ff88,#00ccff);border-radius:8px;}
+#msg{margin-top:20px;font-size:1rem;color:#00ffcc;}
