@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Quiz Battle Duo</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
     <h1>⚔️ Quiz Battle: Duo Mode</h1>
-
     <div id="room-section">
       <button onclick="createRoom()">🛡️ Create Room</button>
-      <input type="text" id="roomCodeInput" placeholder="Enter 6-digit room code" maxlength="6"/>
+      <input type="text" id="roomCodeInput" placeholder="6-digit room code" maxlength="6"/>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium" selected>Medium</option>
+        <option value="hard">Hard</option>
+      </select>
       <button onclick="joinRoom()">⚔️ Join Room</button>
     </div>
-
     <div id="game" style="display:none;">
-      <h2 id="playerStatus">You are: ...</h2>
-      <h3 id="question">Waiting for question...</h3>
+      <h2 id="playerStatus"></h2>
+      <h3 id="question">Waiting...</h3>
       <div id="answers"></div>
-      
       <div class="hp-bars">
-        <div>
-          <label>🧍 You</label>
-          <progress id="yourHP" value="100" max="100"></progress>
-        </div>
-        <div>
-          <label>👾 Enemy</label>
-          <progress id="enemyHP" value="100" max="100"></progress>
-        </div>
+        <div><label>🧍 You</label><progress id="yourHP" value="100" max="100"/></div>
+        <div><label>👾 Enemy</label><progress id="enemyHP" value="100" max="100"/></div>
       </div>
-
       <p id="msg"></p>
     </div>
   </div>
-  
-
   <script type="module" src="script.js"></script>
 </body>
 </html>
