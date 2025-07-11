@@ -2,9 +2,13 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/fireba
 import { getDatabase, ref, set, update, onValue } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "...", authDomain: "...", databaseURL: "...",
-  projectId: "...", storageBucket: "...",
-  messagingSenderId: "...", appId: "..."
+  apiKey: "AIzaSyDNH6nI4GuixGJ5RMZQSe1ukqo2jsCGU_c",
+  authDomain: "quiz-battle-duo.firebaseapp.com",
+  databaseURL: "https://quiz-battle-duo-default-rtdb.firebaseio.com",
+  projectId: "quiz-battle-duo",
+  storageBucket: "quiz-battle-duo.appspot.com",
+  messagingSenderId: "829046874067",
+  appId: "1:829046874067:web:b70ed6ca8efcfc862d1926"
 };
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
